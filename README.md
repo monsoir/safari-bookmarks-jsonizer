@@ -26,13 +26,13 @@
 4. 使用
 
     ```sh
-    python transformer.py -i ./Safari\ Bookmarks.html -o result.json
+    python jsonize.py -i ./Safari\ Bookmarks.html -o result.json
     ```
 
 ## 帮助
 
 ```sh
-python transformer.py -h
+python jsonize.py -h
 ```
 
 ```
