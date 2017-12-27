@@ -10,7 +10,9 @@ SOURCE_FILE = './Safari Bookmarks.html'
 TARGET_FILE = './result.json'
 TEMPERORY_FILE = './temp.html'
 
-def native_bookmarks_to_json(source_path, output_path=TARGET_FILE, ignore_folders=None, ignore_items=None, only_extract_folders=None, only_extract_items=None):
+def native_bookmarks_to_json(source_path=None, output_path=None, ignore_folders=None, ignore_items=None, only_extract_folders=None, only_extract_items=None):
+    if not source_path or not output_path:
+            raise ValueError('source file and output_path are needed')
     cleaner = Cleaner(source_path=source_path, temp_path=TEMPERORY_FILE)
     cleaner.cleanup_source()
 
