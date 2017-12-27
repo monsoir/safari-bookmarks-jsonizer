@@ -42,8 +42,7 @@ def help():
 
     return '\n'.join([common_command, other_option_prompt, other_option]) + '\n'
 
-
-if __name__ == '__main__':
+def main():
     # native_bookmarks_to_json()
 
     # 原始获取命令行参数
@@ -101,6 +100,9 @@ if __name__ == '__main__':
     # print('ignore items: ' + str(ignore_items))
     # print('only extract folders: ' + str(only_extract_folders))
     # print('onlu extract items: ' + str(only_extract_items))
+
+if __name__ == '__main__':
+    main()
 
 '''
 命令行工具参数解析方法：
