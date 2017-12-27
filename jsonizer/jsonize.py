@@ -2,9 +2,8 @@ import os
 import json
 import sys, getopt
 
-from model import Catelog, Category
-from cleaner import Cleaner
-from extractor import Extractor
+from .cleaner import Cleaner
+from .extractor import Extractor
 
 SOURCE_FILE = './Safari Bookmarks.html'
 TARGET_FILE = './result.json'

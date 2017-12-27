@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup as BSS
-from model import Catelog, Category
+from .model import Catelog, Category
 
 class Extractor:
     cleaned_file_path = None

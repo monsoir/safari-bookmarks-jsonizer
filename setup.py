@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='safari-bookmarks-jsonize',
-    version='1.0.0',
+    version='1.0.1',
     keywords=['Safari', 'Bookmarks', 'JSON', 'Monsoir'],
     description='transform Safari bookmarks export to JSON file',
     license='MIT License',
