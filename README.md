@@ -23,6 +23,38 @@
     jsonize -i ./Safari\ Bookmarks.html -o ./result.json
     ```
 
+## 目标文件格式
+
+导出的 JSON 格式为
+
+```JSON
+{
+    "title": "分类名称",
+    "catelogs": [
+        {
+            "address": "书签地址",
+            "name": "书签名字",
+            "favicon": "书签网站的图标，选填，App 会通过网站规范进行获取",
+            "remark": "对书签的备注，选填"
+        },
+        {
+            "//": "..."
+        }
+    ],
+    "categories": [
+        {
+            "title": "二级分类名称",
+            "catelogs": [
+                {
+                    "//": "...",
+                }
+            ],
+            "categories": []
+        }
+    ]
+}
+```
+
 ## 帮助
 
 ```sh
