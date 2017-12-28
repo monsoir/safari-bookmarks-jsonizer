@@ -65,6 +65,11 @@ def main():
         print('Error, command should be like:\n')
         print(help())
         sys.exit(2) # exit(2) 是什么意思
+
+    if not opts:
+        print('Error, command should be like:\n')
+        print(help())
+        sys.exit(2) # exit(2) 是什么意思
     
     # 没用到的 args 是什么
     for opt, arg in opts:
