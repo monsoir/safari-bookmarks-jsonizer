@@ -4,35 +4,29 @@
 
 ## 运行
 
-1. 下载代码
+1. 创建并激活虚拟环境，使用的是 Python 3.6.2 开发
 
-    ```sh
-    git clone https://github.com/Monsoir/safari-bookmarks-jsonizer.git
-    cd safari-bookmarks-jsonizer/
     ```
-
-2. 创建并激活虚拟环境，使用的是 Python 3.6.2 开发
-
     virtualenv --no-site-packages env
     source env/bin/activate
     ```
 
-3. 安装依赖
+1. 安装
 
     ```sh
-    pip install -r requirements.txt 
+    pip install safari-bookmarks-jsonizer
     ```
 
-4. 使用
+1. 使用
 
     ```sh
-    python jsonize.py -i ./Safari\ Bookmarks.html -o result.json
+    jsonize -i ./Safari\ Bookmarks.html -o ./result.json
     ```
 
 ## 帮助
 
 ```sh
-python jsonize.py -h
+jsonize -h
 ```
 
 ```
