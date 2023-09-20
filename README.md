@@ -1,41 +1,39 @@
 # Safari bookmarks jsonizer
 
-将 Safari 导出的书签文件转换为 JSON 格式的文件
+Transform exported Safari bookmarks as JSON file
 
-## 运行
+## How to use
 
-1. 创建并激活虚拟环境，使用的是 Python 3.6.2 开发
+1. Create and activate a virtual environment, using Python 3.6.2
 
     ```
     virtualenv --no-site-packages env
     source env/bin/activate
     ```
 
-1. 安装
+2. Install
 
     ```sh
     pip install safari-bookmarks-jsonizer
     ```
 
-1. 使用
+3. Run it
 
     ```sh
     jsonize -i ./Safari\ Bookmarks.html -o ./result.json
     ```
 
-## 目标文件格式
-
-导出的 JSON 格式为
+## Output file format
 
 ```JSON
 {
-    "title": "分类名称",
+    "title": "<category name>",
     "catelogs": [
         {
-            "address": "书签地址",
-            "name": "书签名字",
-            "favicon": "书签网站的图标，选填，App 会通过网站规范进行获取",
-            "remark": "对书签的备注，选填"
+            "address": "<bookmark address>",
+            "name": "<bookmark name>",
+            "favicon": "<bookmark icon, optional>",
+            "remark": "<remark of the bookmark, optional>"
         },
         {
             "//": "..."
@@ -43,7 +41,7 @@
     ],
     "categories": [
         {
-            "title": "二级分类名称",
+            "title": "subcategory name",
             "catelogs": [
                 {
                     "//": "...",
@@ -55,7 +53,7 @@
 }
 ```
 
-## 帮助
+## Help
 
 ```sh
 jsonize -h
